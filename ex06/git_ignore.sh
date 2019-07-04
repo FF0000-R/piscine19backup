@@ -1,1 +1,1 @@
-echo "$(<../.gitignore)"
+cat ../.gitignore
