@@ -6,13 +6,32 @@
 /*   By: rdebroux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 18:25:57 by rdebroux          #+#    #+#             */
-/*   Updated: 2019/07/08 21:01:03 by rdebroux         ###   ########.fr       */
+/*   Updated: 2019/07/11 20:42:17 by rdebroux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#incude<unistd.h>
+#include <unistd.h>
 
-void ft_print_alphabet(void)
+int		ft_putchar(char c)
 {
-	write(1,"abcdefghijklmnopqrstuvwxyz", 26);
+	write(1, &c, 1);
+	return (0);
+}
+
+void	ft_print_alphabet(void)
+{
+	int a;
+
+	a = 'a';
+	while (a <= 'z')
+	{
+		ft_putchar(a);
+		a++;
+	}
+}
+
+int		main(void)
+{
+	ft_print_alphabet(void);
+	return (0);
 }

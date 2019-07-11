@@ -6,15 +6,14 @@
 /*   By: rdebroux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 17:26:07 by rdebroux          #+#    #+#             */
-/*   Updated: 2019/07/08 17:50:31 by rdebroux         ###   ########.fr       */
+/*   Updated: 2019/07/11 22:23:57 by rdebroux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#incude<unistd.h>
+#incude <unistd.h>
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-	write(1, &c, 10);
+	write(1, &c, 1);
 	return (0);
 }
-
