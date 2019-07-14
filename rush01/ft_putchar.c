@@ -1,44 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rdebroux <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: silehair <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/09 13:06:25 by rdebroux          #+#    #+#             */
-/*   Updated: 2019/07/12 15:29:21 by rdebroux         ###   ########.fr       */
+/*   Created: 2019/07/14 15:55:20 by silehair          #+#    #+#             */
+/*   Updated: 2019/07/14 15:55:30 by silehair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_comb(void)
+void	ft_putchar(char c)
 {
-	char a, b, c;
-
-	a = '0' - 1;
-	while (a <= 9)
-	{
-		b = a;
-		while (b <= 9)
-		{
-			c = b;
-			while (c <= 9)
-			{
-
-				write(1, &a, 1);
-				write(1, &b, 1);
-				write(1, &c, 1);
-				c++;//lol
-			}
-
-
-			b++;
-		}
-
-
-		a++;
-	}
-
-
+	write(1, &c, 1);
 }
