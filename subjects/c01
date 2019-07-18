@@ -1,0 +1,137 @@
+Chapter III
+Exercise 00 : ft_ft
+
+Turn-in directory : ex00/
+Files to turn in : ft_ft.c
+Allowed functions : None
+Notes : n/a
+
+• Create a function that takes a pointer to in
+Turn-in directory : ex00/
+
+Chapter IV
+Exercise 01 : ft_ultimate_ft
+
+Turn-in directory : ex01/
+Files to turn in : ft_ultimate_ft.c
+Allowed functions : None
+Notes : n/a
+
+• Create a function that takes a pointer to pointer to pointer to pointer to pointer
+to pointer to pointer to pointer to pointer to int as a parameter and sets the value
+"42" to that int.
+• Here’s how it should be prototyped :
+void ft_ultimate_ft(int *********nbr);
+
+6
+
+Chapter V
+Exercise 02 : ft_swap
+
+Turn-in directory : ex02/
+Files to turn in : ft_swap.c
+Allowed functions : None
+Notes : n/a
+• Create a function that swaps the value of two integers whose addresses are entered
+as parameters.
+• Here’s how it should be prototyped :
+void ft_swap(int *a, int *b);
+
+Chapter VI
+Exercise 03 : ft_div_mod
+Exercise 03
+
+ft_div_mod
+Turn-in directory : ex03/
+Files to turn in : ft_div_mod.c
+Allowed functions : None
+Notes : n/a
+
+• Create a function ft_div_mod prototyped like this :
+void ft_div_mod(int a, int b, int *div, int *mod);
+• This function divides parameters a by b and stores the result in the int pointed by
+div. It also stores the remainder of the division of a by b in the int pointed by mod.
+8Chapter VII
+Exercise 04 : ft_ultimate_div_mod
+Exercise 04
+ft_ultimate_div_mod
+Turn-in directory : ex04/
+Files to turn in : ft_ultimate_div_mod.c
+Allowed functions : None
+Notes : n/a
+• Create a function ft_ultimate_div_mod with the following prototype :
+void ft_ultimate_div_mod(int *a, int *b);
+• This function divides parameters a by b. The result of this division is stored in the
+int pointed by a. The remainder of the division is stored in the int pointed by b.
+
+9
+-------------------------------------------------------
+
+Chapter VIII
+Exercise 05 : ft_putstr
+
+ft_putstr
+Turn-in directory : ex05/
+Files to turn in : ft_putstr.c
+Allowed functions : write
+
+Notes : n/a
+• Create a function that displays a string of characters on the standard output.
+• Here’s how it should be prototyped :
+
+void ft_putstr(char *str);
+
+10
+-------------------------------------------------------
+
+Chapter IX
+Exercise 06 : ft_strlen
+
+ft_strlen
+Turn-in directory : ex06/
+Files to turn in : ft_strlen.c
+Allowed functions : None
+Notes : n/a
+
+• Create a function that counts and returns the number of characters in a string.
+• Here’s how it should be prototyped :
+
+int ft_strlen(char *str);
+
+11
+-------------------------------------------------------
+
+Chapter X
+Exercise 07 : ft_rev_int_tab
+
+ft_rev_int_tab
+Turn-in directory : ex07/
+Files to turn in : ft_rev_int_tab.c
+Allowed functions : None
+Notes : n/a
+
+• Create a function which reverses a given array of integer (first goes last, etc).
+• The arguments are a pointer to int and the number of ints in the array.
+• Here’s how it should be prototyped :
+
+void ft_rev_int_tab(int *tab, int size);
+
+12
+-------------------------------------------------------
+
+Chapter XI
+Exercise 08 : ft_sort_int_tab
+
+ft_sort_int_tab
+Turn-in directory : ex08/
+Files to turn in : ft_sort_int_tab.c
+Allowed functions : None
+Notes : n/a
+
+• Create a function which sorts an array of integers by ascending order.
+• The arguments are a pointer to int and the number of ints in the array.
+• Here’s how it should be prototyped :
+
+void ft_sort_int_tab(int *tab, int size);
+
+13

@@ -6,16 +6,15 @@
 /*   By: rdebroux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 22:39:44 by rdebroux          #+#    #+#             */
-/*   Updated: 2019/07/17 22:42:27 by rdebroux         ###   ########.fr       */
+/*   Updated: 2019/07/18 18:03:58 by rdebroux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int i;
 
 	i = 0;
-	while(i++ != '/0')
-	return (0);
+	while (i++ != '/0')
+		return (0);
 }
-
