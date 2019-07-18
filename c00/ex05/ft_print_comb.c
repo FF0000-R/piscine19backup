@@ -6,39 +6,37 @@
 /*   By: rdebroux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/09 13:06:25 by rdebroux          #+#    #+#             */
-/*   Updated: 2019/07/12 15:29:21 by rdebroux         ###   ########.fr       */
+/*   Updated: 2019/07/16 15:08:18 by rdebroux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_comb(void)
+void	ft_print_comb(void)
 {
-	char a, b, c;
+	char a;
+	char b;
+	char c;
 
 	a = '0' - 1;
-	while (a <= 9)
+	while (a++ <= '9')
 	{
 		b = a;
-		while (b <= 9)
+		while (b++ <= '9')
 		{
-			c = b;
-			while (c <= 9)
+			c = b + 1;
+			while (c <= '9')
 			{
-
 				write(1, &a, 1);
 				write(1, &b, 1);
 				write(1, &c, 1);
-				c++;//lol
+				if (a != '7' || b != '8' || c != '9')
+				{
+					write(1, ",", 1);
+					write(1, " ", 1);
+				}
+				c++;
 			}
-
-
-			b++;
 		}
-
-
-		a++;
 	}
-
-
 }

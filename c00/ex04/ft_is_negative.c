@@ -6,13 +6,13 @@
 /*   By: rdebroux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/09 12:00:45 by rdebroux          #+#    #+#             */
-/*   Updated: 2019/07/09 12:00:49 by rdebroux         ###   ########.fr       */
+/*   Updated: 2019/07/16 15:30:43 by rdebroux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#incude<unistd.h>
+#include <unistd.h>
 
-void ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
 	if (n < 0)
 	{
