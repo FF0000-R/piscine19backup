@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdebroux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/18 20:18:36 by rdebroux          #+#    #+#             */
-/*   Updated: 2019/07/18 21:56:45 by rdebroux         ###   ########.fr       */
+/*   Created: 2019/07/18 20:24:46 by rdebroux          #+#    #+#             */
+/*   Updated: 2019/07/18 21:57:54 by rdebroux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+char *ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	int i;
 
-	i = 0;
-	while (*src[i] != '\0')
+	while ()
 	{
-		*src[i] = *dest[i];
+
+	}
+/*
+	i = -1;
+	while (i++ <= n)
+		*dest = *src;
+
+	while (src[i] != '\0')
+	{
+		*dest[i] = '\0';
 		i++;
 	}
-	i++;
-	*dest[i] = '\0';
+*/
 	return (*dest);
 }
+
