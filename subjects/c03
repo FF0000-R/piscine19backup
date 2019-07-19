@@ -1,0 +1,102 @@
+Contents
+
+III Exercise 00 : ft_strcmp 5
+IV Exercise 01 : ft_strncmp 6
+V Exercise 02 : ft_strcat 7
+VI Exercise 03 : ft_strncat 8
+VII Exercise 04 : ft_strstr 9
+VIII Exercise 05 : ft_strlcat 10
+
+------------------------------------------------------------
+
+Chapter III
+Exercise 00 : ft_strcmp
+
+Turn-in directory : ex00/
+Files to turn in : ft_strcmp.c
+Allowed functions : None
+
+• Reproduce the behavior of the function strcmp (man strcmp).
+• Here’s how it should be prototyped :
+
+	int ft_strcmp(char *s1, char *s2);
+
+5
+------------------------------------------------------------
+
+Chapter IV
+Exercise 01 : ft_strncmp
+
+Turn-in directory : ex01/
+Files to turn in : ft_strncmp.c
+Allowed functions : None
+
+• Reproduce the behavior of the function strncmp (man strncmp).
+• Here’s how it should be prototyped :
+
+	int ft_strncmp(char *s1, char *s2, unsigned int n);
+
+6
+------------------------------------------------------------
+
+Chapter V
+Exercise 02 : ft_strcat
+
+Turn-in directory : ex02/
+Files to turn in : ft_strcat.c
+Allowed functions : None
+
+• Reproduce the behavior of the function strcat (man strcat).
+• Here’s how it should be prototyped :
+
+	char *ft_strcat(char *dest, char *src);
+
+7
+------------------------------------------------------------
+
+Chapter VI
+Exercise 03 : ft_strncat
+
+Turn-in directory : ex03/
+Files to turn in : ft_strncat.c
+Allowed functions : None
+
+• Reproduce the behavior of the function strncat (man strncat).
+• Here’s how it should be prototyped :
+
+	char *ft_strncat(char *dest, char *src, unsigned int nb);
+
+8
+------------------------------------------------------------
+
+Chapter VII
+Exercise 04 : ft_strstr
+
+Turn-in directory : ex04/
+Files to turn in : ft_strstr.c
+Allowed functions : None
+
+• Reproduce the behavior of the function strstr (man strstr).
+• Here’s how it should be prototyped :
+
+	char *ft_strstr(char *str, char *to_find);
+
+9
+------------------------------------------------------------
+
+Chapter VIII
+Exercise 05 : ft_strlcat
+
+Turn-in directory : ex05/
+Files to turn in : ft_strlcat.c
+Allowed functions : None
+
+• Reproduce the behavior of the function strlcat (man strlcat).
+• Here’s how it should be prototyped :
+
+	unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
+
+10
+------------------------------------------------------------
+============================================================
+------------------------------------------------------------

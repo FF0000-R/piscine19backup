@@ -1,0 +1,188 @@
+Contents
+
+III Exercise 00 : ft_iterative_factorial 6
+IV Exercise 01 : ft_recursive_factorial 7
+V Exercise 02 : ft_iterative_power 8
+VI Exercise 03 : ft_recursive_power 9
+VII Exercise 04 : ft_fibonacci 10
+VIII Exercise 05 : ft_sqrt 11
+IX Exercise 06 : ft_is_prime 12
+X Exercise 07 : ft_find_next_prime 13
+XI Exercise 08 : The Ten Queens 14
+
+------------------------------------------------------------
+
+Chapter III
+Exercise 00 : ft_iterative_factorial
+
+Turn-in directory : ex00/
+Files to turn in : ft_iterative_factorial.c
+Allowed functions : None
+
+• Create an iterated function that returns a number. This number is the result of a
+	factorial operation based on the number given as a parameter.
+• If the argument is not valid the function should return 0.
+• Overflows must not be handled, the function return will be undefined.
+• Here’s how it should be prototyped :
+
+	int ft_iterative_factorial(int nb);
+
+6
+------------------------------------------------------------
+
+Chapter IV
+Exercise 01 : ft_recursive_factorial
+
+Turn-in directory : ex01/
+Files to turn in : ft_recursive_factorial.c
+Allowed functions : None
+
+• Create a recursive function that returns the factorial of the number given as a
+	parameter.
+• If the argument is not valid the function should return 0.
+• Overflows must not be handled, the function return will be undefined.
+• Here’s how it should be prototyped :
+
+	int ft_recursive_factorial(int nb);
+
+7
+------------------------------------------------------------
+
+Chapter V
+Exercise 02 : ft_iterative_power
+
+Turn-in directory : ex02/
+Files to turn in : ft_iterative_power.c
+Allowed functions : None
+
+• Create an iterated function that returns the value of a power applied to a number.
+	An power lower than 0 returns 0. Overflows must not be handled.
+• Here’s how it should be prototyped :
+
+	int ft_iterative_power(int nb, int power);
+
+8
+------------------------------------------------------------
+
+Chapter VI
+Exercise 03 : ft_recursive_power
+
+Turn-in directory : ex03/
+Files to turn in : ft_recursive_power.c
+Allowed functions : None
+
+• Create a recursive function that returns the value of a power applied to a number.
+• Overflows must not be handled, the function return will be undefined.
+• Here’s how it should be prototyped :
+
+	int ft_recursive_power(int nb, int power);
+
+9
+------------------------------------------------------------
+
+Chapter VII
+Exercise 04 : ft_fibonacci
+
+Turn-in directory : ex04/
+Files to turn in : ft_fibonacci.c
+Allowed functions : None
+
+• Create a function ft_fibonacci that returns the n-th element of the Fibonacci
+	sequence, the first element being at the 0 index. We’ll consider that the Fibonacci
+	sequence starts like this: 0, 1, 1, 2.
+• Overflows must not be handled, the function return will be undefined.
+• Here’s how it should be prototyped :
+
+	int ft_fibonacci(int index);
+
+• Obviously, ft_fibonacci has to be recursive.
+• If the index is less than 0, the function should return -1.
+
+10
+------------------------------------------------------------
+
+Chapter VIII
+Exercise 05 : ft_sqrt
+
+Turn-in directory : ex05/
+Files to turn in : ft_sqrt.c
+Allowed functions : None
+
+• Create a function that returns the square root of a number (if it exists), or 0 if the
+	square root is an irrational number.
+• Here’s how it should be prototyped :
+
+	int ft_sqrt(int nb);
+
+11
+------------------------------------------------------------
+
+Chapter IX
+Exercise 06 : ft_is_prime
+
+Turn-in directory : ex06/
+Files to turn in : ft_is_prime.c
+Allowed functions : None
+
+• Create a function that returns 1 if the number given as a parameter is a prime
+	number, and 0 if it isn’t.
+• Here’s how it should be prototyped :
+
+	int ft_is_prime(int nb);
+
+ /!\ *0 and 1 are not prime numbers.* /!\
+
+12
+------------------------------------------------------------
+
+Chapter X
+Exercise 07 : ft_find_next_prime
+
+Turn-in directory : ex07/
+Files to turn in : ft_find_next_prime.c
+Allowed functions : None
+
+• Create a function that returns the next prime number greater or equal to the number
+	given as argument.
+• Here’s how it should be prototyped :
+
+	int ft_find_next_prime(int nb);
+
+13
+------------------------------------------------------------
+
+Chapter XI
+Exercise 08 : The Ten Queens
+
+Turn-in directory : ex08/
+Files to turn in : ft_ten_queens_puzzle.c
+Allowed functions : write
+• Create a function that displays all possible placements of the ten queens on a
+	chessboard which would contain ten columns and ten lines, without them being
+	able to reach each other in a single move, and returns the number of possibilities.
+• Recursivity is required to solve this problem.
+• Here’s how it should be prototyped :
+
+	int ft_ten_queens_puzzle(void);
+
+• Here’s how it’ll be displayed :
+
+	$>./a.out | cat -e
+	0257948136$
+	0258693147$
+	...
+	4605713829$
+	4609582731$
+	...
+	9742051863$
+	$>
+
+• The sequence goes from left to right. The first digit represents the first Queen’s
+	position in the first column (the index starting from 0). The Nth digit represents
+	the Nth Queen’s position in the Nth column.
+• The return value must be the total number of displayed solutions.
+
+14
+------------------------------------------------------------
+============================================================
+------------------------------------------------------------

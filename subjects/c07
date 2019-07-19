@@ -1,0 +1,130 @@
+Contents
+
+III Exercise 00 : ft_strdup 6
+IV Exercise 01 : ft_range 7
+V Exercise 02 : ft_ultimate_range 8
+VI Exercice 03 : ft_strjoin 9
+VII Exercise 04 : ft_convert_base 10
+VIII Exercise 05 : ft_split 11
+
+------------------------------------------------------------
+
+Chapter III
+Exercise 00 : ft_strdup
+
+Turn-in directory : ex00/
+Files to turn in : ft_strdup.c
+Allowed functions : malloc
+
+• Reproduce the behavior of the function strdup (man strdup).
+• Here’s how it should be prototyped :
+
+	char *ft_strdup(char *src);
+
+6
+------------------------------------------------------------
+
+Chapter IV
+Exercise 01 : ft_range
+
+Turn-in directory : ex01/
+Files to turn in : ft_range.c
+Allowed functions : malloc
+
+• Create a function ft_range which returns an array ofints. This int array should
+	contain all values between min and max.
+• Min included - max excluded.
+• Here’s how it should be prototyped :
+
+	int *ft_range(int min, int max);
+
+• If min´value is greater or equal to max’s value, a null pointer should be returned.
+
+7
+------------------------------------------------------------
+
+Chapter V
+Exercise 02 : ft_ultimate_range
+
+Turn-in directory : ex02/
+Files to turn in : ft_ultimate_range.c
+Allowed functions : malloc
+
+• Create a function ft_ultimate_range which allocates and assigns an array of ints.
+	This int array should contain all values between min and max.
+• Min included - max excluded.
+• Here’s how it should be prototyped :
+
+	int ft_ultimate_range(int **range, int min, int max);
+
+• The size of range should be returned (or -1 on error).
+• If the value of min is greater or equal to max’s value, range will point on NULL
+	and it should return 0.
+
+8
+------------------------------------------------------------
+
+Chapter VI
+Exercice 03 : ft_strjoin
+
+Turn-in directory : ex03/
+Files to turn in : ft_strjoin.c
+Allowed functions : malloc
+
+• Write a function that will concatenate all the strings pointed by strs
+	separated by sep.
+• size is the number of strings in strs
+• if size is 0, it should a freeable empty string.
+• Here’s how it should be prototyped :
+
+	char *ft_strjoin(int size, char **strs, char *sep);
+
+9
+------------------------------------------------------------
+
+Chapter VII
+Exercise 04 : ft_convert_base
+
+Turn-in directory : ex04/
+Files to turn in : ft_convert_base.c, ft_convert_base2.c
+Allowed functions : malloc, free
+
+• Create a function that returns the result of the conversion of the string nbr from a
+	base base_from to a base base_to.
+• nbr, base_from, base_to may be not writable.
+• nbr will follow the same rules as ft_atoi_base (from an other module).
+	Beware of ’+’, ’-’ and whitespaces.
+• The number represented by nbr must fit inside an int.
+• If a base is wrong, NULL should be returned.
+• The returned number must be prefix only by a single and uniq ’-’ if necessary,
+	no whitespaces, no ’+’.
+• Here’s how it should be prototyped :
+
+	char *ft_convert_base(char *nbr, char *base_from, char *base_to);
+
+10
+------------------------------------------------------------
+
+Chapter VIII
+Exercise 05 : ft_split
+
+Turn-in directory : ex05/
+Files to turn in : ft_split.c
+Allowed functions : malloc
+
+• Create a function that splits a string of character depending on another
+	string of characters.
+• You’ll have to use each character from the string charset as a separator.
+• The function returns an array where each element of the array contains the address
+	of a string wrapped between two separators. The last element of that array
+	should equal to 0 to indicate the end of the array.
+• There cannot be any empty strings in your array. Get your own conclusions accordingly.
+• The string given as argument won’t be modifiable.
+• Here’s how it should be prototyped :
+
+	char **ft_split(char *str, char *charset);
+
+11
+------------------------------------------------------------
+============================================================
+------------------------------------------------------------
