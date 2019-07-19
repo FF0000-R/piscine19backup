@@ -131,9 +131,11 @@ Allowed functions : None
 • excepted the base rule, the function should work exactly like ft_atoi.
 • If there’s an invalid argument, the function should return 0. Examples of invalid
 	arguments :
+	
 	◦ base is empty or size of 1;
 	◦ base contains the same character twice ;
 	◦ base contains + or - or whitespaces;
+
 • Here’s how it should be prototyped :
 
 	int ft_atoi_base(char *str, char *base);
