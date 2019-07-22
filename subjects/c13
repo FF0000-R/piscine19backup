@@ -1,0 +1,180 @@
+Contents
+
+III Exercise 00 : btree_create_node 5
+IV Exercise 01 : btree_apply_prefix 6
+V Exercise 02 : btree_apply_infix 7
+VI Exercise 03 : btree_apply_suffix 8
+VII Exercise 04 : btree_insert_data 9
+VIII Exercise 05 : btree_search_item 10
+IX Exercise 06 : btree_level_count 11
+X Exercise 07 : btree_apply_by_level 12
+
+------------------------------------------------------------
+
+• For the following exercises, we’ll use the following structure :
+
+	typedef struct s_btree
+	{
+	struct s_btree *left;
+	struct s_btree *right;
+	void *item;
+	} t_btree;
+
+• You’ll have to include this structure in a file ft_btree.h and submit it for each
+	exercise.
+• From exercise 01 onward, we’ll use our btree_create_node, so make arrangements
+	(it could be useful to have its prototype in a file ft_btree.h...).
+
+------------------------------------------------------------
+
+
+Chapter III
+Exercise 00 : btree_create_node
+
+Turn-in directory : ex00/
+Files to turn in : btree_create_node.c, ft_btree.h
+Allowed functions : malloc
+Notes : n/a
+
+• Create the function btree_create_node which allocates a new element. It should
+	initialise its item to the argument’s value, and all other elements to 0.
+• The created node’s address is returned.
+• Here’s how it should be prototyped :
+
+	t_btree *btree_create_node(void *item);
+
+5
+------------------------------------------------------------
+
+Chapter IV
+Exercise 01 : btree_apply_prefix
+
+Turn-in directory : ex01/
+Files to turn in : btree_apply_prefix.c, ft_btree.h
+Allowed functions : None
+Notes : n/a
+
+• Create a function btree_apply_prefix which applies the function given as argument to the item of each node, using
+	prefix traversal to search the tree.
+• Here’s how it should be prototyped :
+
+	void btree_apply_prefix(t_btree *root, void (*applyf)(void *));
+
+6
+------------------------------------------------------------
+
+Chapter V
+Exercise 02 : btree_apply_infix
+
+Turn-in directory : ex02/
+Files to turn in : btree_apply_infix.c, ft_btree.h
+Allowed functions : None
+Notes : n/a
+
+• Create a function btree_apply_infix which applies the function given as argument
+	to the item of each node, using infix traversal to search the tree.
+• Here’s how it should be prototyped :
+
+	void btree_apply_infix(t_btree *root, void (*applyf)(void *));
+
+7
+------------------------------------------------------------
+
+Chapter VI
+Exercise 03 : btree_apply_suffix
+
+Turn-in directory : ex03/
+Files to turn in : btree_apply_suffix.c, ft_btree.h
+Allowed functions : None
+Notes : n/a
+
+• Create a function btree_apply_suffix which applies the function given as argument to the item of each node, using
+	suffix traversal to search the tree.
+• Here’s how it should be prototyped :
+
+	void btree_apply_suffix(t_btree *root, void (*applyf)(void *));
+
+8
+------------------------------------------------------------
+
+Chapter VII
+Exercise 04 : btree_insert_data
+Exercise 04
+btree_insert_data
+Turn-in directory : ex04/
+Files to turn in : btree_insert_data.c, ft_btree.h
+Allowed functions : btree_create_node
+Notes : n/a
+
+• Create a function btree_insert_data which inserts the element item into a tree.
+	The tree passed as argument will be sorted : for each node all lower elements are
+	located on the left side and all higher or equal elements on the right. We’ll also
+	pass a comparison function similar to strcmp as argument.
+• The root parameter points to the root node of the tree. First time called, it should
+	point to NULL.
+• Here’s how it should be prototyped :
+
+	void btree_insert_data(t_btree **root, void *item, int (*cmpf)(void *, void *));
+
+9
+------------------------------------------------------------
+
+Chapter VIII
+Exercise 05 : btree_search_item
+
+Turn-in directory : ex05/
+Files to turn in : btree_search_item.c, ft_btree.h
+Allowed functions : None
+Notes : n/a
+
+• Create a function btree_search_item which returns the first element related to
+	the reference data given as argument. The tree should be browsed using infix
+	traversal . If the element isn’t found, the function should return NULL.
+• Here’s how it should be prototyped :
+
+	void *btree_search_item(t_btree *root, void *data_ref, int (*cmpf)(void *, void *));
+
+10
+------------------------------------------------------------
+
+Chapter IX
+Exercise 06 : btree_level_count
+
+Turn-in directory : ex06/
+Files to turn in : btree_level_count.c, ft_btree.h
+Allowed functions : None
+Notes : n/a
+
+• Create a function btree_level_count which returns the size of the largest branch
+	passed as argument.
+• Here’s how it should be prototyped :
+
+	int btree_level_count(t_btree *root);
+
+11
+------------------------------------------------------------
+
+Chapter X
+Exercise 07 : btree_apply_by_level
+
+Turn-in directory : ex07/
+Files to turn in : btree_apply_by_level.c, ft_btree.h
+Allowed functions : malloc, free
+Notes : n/a
+
+• Create a function btree_apply_by_level which applies the function passed as
+	argument to each node of the tree. The tree must be browsed level by level. The
+	function called will take three arguments :
+	◦ The first argument, of type void *, will correspond to the node’s item ;
+	◦ The second argument, of type int, corresponds to the level on which we find
+		: 0 for root, 1 for children, 2 for grand-children, etc. ;
+	◦ The third argument, of type int, is worth 1 if it’s the first node of the level,
+		or worth 0 otherwise.
+• Here’s how it should be prototyped :
+
+	void btree_apply_by_level(t_btree *root, void (*applyf)(void *item, int current_level, int is_first_elem))
+
+12
+------------------------------------------------------------
+============================================================
+------------------------------------------------------------

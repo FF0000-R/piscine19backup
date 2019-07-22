@@ -1,0 +1,115 @@
+Contents
+
+III Exercise 00 : display_file 5
+IV Exercise 01 : cat 7
+V Exercise 02 : tail 8
+VI Exercise 03 : hexdump 9
+
+------------------------------------------------------------
+
+Chapter III
+Exercise 00 : display_file
+
+Turn-in directory : ex00/
+Files to turn in : Makefile, and files needed for your program
+Allowed functions : close, open, read, write
+Notes : n/a
+
+• Create a program called ft_display_file that displays, on the standard output,
+	only the content of the file given as argument.
+• The submission directory should have a Makefile with the following rules :
+
+	all, clean, fclean. The binary will be called ft_display_file.
+
+• The malloc function is forbidden. You can only do this exercise by declaring a
+	fixed-sized array.
+• All files given as arguments will be valid.
+• Error messages have to be displayed on their reserved output followed by
+	a new line.
+• If no argument is given, it should display :
+
+	File name missing.
+
+• If there is more than one argument, it should display :
+
+	Too many arguments.
+
+• If the file cannot be read, it should display :
+
+	Cannot read file.
+
+6-5
+------------------------------------------------------------
+
+Chapter IV
+Exercise 01 : cat
+
+Turn-in directory : ex01/
+Files to turn in : Makefile, and files needed for your program
+Allowed functions : close, open, read, write, strerror, basename
+Notes : n/a
+
+• Create a program called ft_cat which does the same thing as the
+	system’s cat command-line.
+• You don’t have to handle options.
+• The submission directory should have a Makefile with the following rules :
+
+	all, clean, fclean.
+
+• You may use the variable errno (check the man for Errno).
+• You should read the man of all the authorized functions
+• You can only do this exercise by declaring a fixed-sized array. This array will have
+	a size limited to a little less than 30 ko. In order to test that size-limit, use the
+	ulimit command-line in your Shell.
+
+7
+------------------------------------------------------------
+
+Chapter V
+Exercise 02 : tail
+
+Turn-in directory : ex02/
+Files to turn in : Makefile, and files needed for your program
+Allowed functions : close, open, read, write, malloc,
+		    free, strerror, basename
+Notes : n/a
+
+• Create a program called ft_tail which does the same thing as
+	the system command tail.
+• The only option you have to handle is -c, but you don’t need
+	to handle ’+’ or ’-’ signs.
+• The submission directory should have a Makefile with the following rules :
+
+	all, clean, fclean.
+
+• You may use this variable :
+
+	errno.
+
+8
+------------------------------------------------------------
+
+Chapter VI
+Exercise 03 : hexdump
+
+Turn-in directory : ex03/
+Files to turn in : Makefile, and files needed for your program
+Allowed functions : close, open, read, write, malloc,
+		    free, strerror, basename
+Notes : n/a
+
+• Create a program called ft_hexdump which does the same thing as the system’s
+	hexdump command-line without redirection.
+• The only option you have to handle is -C.
+• The submission directory should have a Makefile with the following rules :
+
+	all, clean, fclean.
+
+• You may use this variable :
+
+	errno.
+
+9
+------------------------------------------------------------
+============================================================
+------------------------------------------------------------
