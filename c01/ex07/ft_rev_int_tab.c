@@ -16,7 +16,7 @@ void	ft_rev_int_tab(int *tab, int size)
 	int tmp[size];
 
 	tmp = {0};
-	tmp[sizw + 1] = '\0';
+	tmp[size + 1] = '\0';
 	i = 0;
 
 	while(size != 0)
